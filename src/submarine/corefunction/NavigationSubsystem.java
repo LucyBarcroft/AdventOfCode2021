@@ -13,9 +13,9 @@ public class NavigationSubsystem
     mInput = input;
   }
 
-   /**
-    * Data corresponding to a type of chunk
-    */
+  /**
+   * Data corresponding to a type of chunk
+   */
   private enum ChunkType
   {
     STANDARD("(", ")", 3, 1),
@@ -142,8 +142,8 @@ public class NavigationSubsystem
           }
         }
         else if ((closerIndex-1 >= 0) &&
-                  line.substring(closerIndex-1, closerIndex)
-                      .equals(ChunkType.fromCloser(closerChar).getOpener()))
+            line.substring(closerIndex-1, closerIndex)
+            .equals(ChunkType.fromCloser(closerChar).getOpener()))
         {
           //
           // Valid chunk - remove it from the string and keep iterating

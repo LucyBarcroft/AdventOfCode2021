@@ -13,31 +13,31 @@ import utils.GenericDay;
  */
 public class Day08 extends GenericDay {
 
-	/**
-	 * CONSTRUCTOR
-	 */
-	public Day08()
-	{
-		super(8);
-	}
+  /**
+   * CONSTRUCTOR
+   */
+  public Day08()
+  {
+    super(8);
+  }
 
-	public static void main(String[] args)
-	{
-		Day08 day = new Day08();
-		ArrayList<String> input = day.getInput(false);
+  public static void main(String[] args)
+  {
+    Day08 day = new Day08();
+    ArrayList<String> input = day.getInput(false);
 
-		int numUniqueNumbers = 0;
-		int sum = 0;
+    int numUniqueNumbers = 0;
+    int sum = 0;
 
-		for (String inputRow: input)
-		{
-			DisplayInterpretor displayInterpretor = new DisplayInterpretor(inputRow);
-			numUniqueNumbers += displayInterpretor.getNumUniqueNumbersInOutput();
-			sum += displayInterpretor.getOutput();
-		}
+    for (String inputRow: input)
+    {
+      DisplayInterpretor displayInterpretor = new DisplayInterpretor(inputRow);
+      numUniqueNumbers += displayInterpretor.getNumUniqueNumbersInOutput();
+      sum += displayInterpretor.getOutput();
+    }
 
-		System.out.println("number of unique numbers: " + numUniqueNumbers);
-		System.out.println("sum: " + sum);
-	}
+    System.out.println("number of unique numbers: " + numUniqueNumbers);
+    System.out.println("sum: " + sum);
+  }
 
 }

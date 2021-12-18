@@ -21,15 +21,6 @@ public class Day13 extends GenericDay
     Day13 day = new Day13();
     ArrayList<String> input = day.getInput(true);
 
-    // fold along y
-    // new array is half the number of rows - same number of columns
-    // each point is marked if it was originally or (oldNumRows-point), column is marked
-
-    // fold along y
-    // new array is half the number of columns - same number of rows
-    // each point is marked if it was originally or row, (oldNumColumns-point) is marked
-
-
 
 
   }

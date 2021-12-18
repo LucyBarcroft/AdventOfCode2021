@@ -8,4 +8,9 @@ public class OrigamiFolder
     // TODO Auto-generated constructor stub
   }
 
+
+  // fold along y (fo
+
+  //
+
 }

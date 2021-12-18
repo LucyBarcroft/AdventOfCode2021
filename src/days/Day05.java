@@ -14,30 +14,30 @@ import utils.GenericDay;
  */
 public class Day05 extends GenericDay {
 
-	/**
-	 * CONSTRUCTOR
-	 */
-	public Day05()
-	{
-		super(5);
-	}
+  /**
+   * CONSTRUCTOR
+   */
+  public Day05()
+  {
+    super(5);
+  }
 
-	public static void main(String[] args)
-	{
-		Day05 day = new Day05();
-		ArrayList<String> input = day.getInput(true);
+  public static void main(String[] args)
+  {
+    Day05 day = new Day05();
+    ArrayList<String> input = day.getInput(true);
 
-		for (String line: input)
-		{
-		    String[] startAndFinish = line.split(" -> ");
-		    int[] startCoord = Arrays.stream(startAndFinish[0].split(","))
-							         .mapToInt(x -> Integer.valueOf(x))
-							         .toArray();
-		    int[] endCoord = Arrays.stream(startAndFinish[1].split(","))
-							       .mapToInt(x -> Integer.valueOf(x))
-							       .toArray();
+    for (String line: input)
+    {
+      String[] startAndFinish = line.split(" -> ");
+      int[] startCoord = Arrays.stream(startAndFinish[0].split(","))
+          .mapToInt(x -> Integer.valueOf(x))
+          .toArray();
+      int[] endCoord = Arrays.stream(startAndFinish[1].split(","))
+          .mapToInt(x -> Integer.valueOf(x))
+          .toArray();
 
 
-	}
+    }
 
-}
+  }
